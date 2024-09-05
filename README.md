@@ -1,6 +1,3 @@
-Here’s the updated README with the new project name:
-
----
 
 # **Vocalis**
 
