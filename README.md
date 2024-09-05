@@ -1,3 +1,4 @@
+# **Reminder: This is mainly supposed to be a project to get me started into more sophisticated software development, i plan to add things like machine learning and more advanced detection models in the future :)**
 
 # **Vocalis**
 
@@ -81,6 +82,3 @@ We welcome contributions! 💡 If you have ideas for improvements or want to fix
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-Feel free to adjust any details or further customize the README as needed!
