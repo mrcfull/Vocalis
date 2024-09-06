@@ -1,0 +1,5 @@
+speech_recognition==3.9.0
+lupa==1.13
+numpy==1.24.2
+scipy==1.10.1
+webrtcvad==2.0.10
