@@ -83,7 +83,6 @@ python src/main.py
 
 ## **Additional Resources**
 
-- **[PyInstaller Documentation](https://pyinstaller.org/)**
 - **[Lua Documentation](https://www.lua.org/manual/5.1/)**
 - **[Docker Documentation](https://docs.docker.com/)**
 - **[Docker Compose Documentation](https://docs.docker.com/compose/)**
