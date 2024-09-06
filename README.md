@@ -1,3 +1,5 @@
+## **I USED CHATGPT TO MAKE THE README**
+
 # **Reminder: This is mainly supposed to be a project to help get me started into more sophisticated software development, i plan to add things like machine learning and more advanced detection models in the future :)**
 
 # **Vocalis**
