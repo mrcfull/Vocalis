@@ -1,5 +1,5 @@
 
-# **Vocalis**
+# **Vocalis** v1.0
 
 ## **Project Overview**
 
