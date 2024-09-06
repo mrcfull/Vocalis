@@ -1,86 +1,108 @@
-## **I USED CHATGPT TO MAKE THE README**
-
-# **Reminder: This is mainly supposed to be a project to help get me started into more sophisticated software development, i plan to add things like machine learning and more advanced detection models in the future :)**
 
 # **Vocalis**
 
-## **Overview**
+## **Project Overview**
 
-Welcome to **Vocalis**! 🚀 This cutting-edge application integrates Python and Lua to capture, recognize, and process your voice commands effortlessly. Whether you're automating tasks or exploring new ways to interact with your computer, **Vocalis** is designed to streamline your experience.
+**Vocalis** is a Python and Lua-based application designed for processing and executing voice commands. The project demonstrates integration between Python for voice recognition and Lua for command processing, with support for Docker to streamline development and deployment.
 
-## **Features**
+## **Technical Features**
 
-- **🎙️ Voice Command Capture:** Seamlessly captures voice commands using your microphone.
-- **🧠 Command Recognition:** Transcribes spoken commands into text using Google Speech Recognition.
-- **✔️ Command Confirmation:** Ensures accuracy by asking for user confirmation before executing commands.
-- **📜 Command Logging:** Keeps a log of commands and responses with timestamps for easy tracking.
-- **🔧 Lua Integration:** Processes commands through Lua scripts, offering flexible and customizable responses.
+- **Voice Command Capture:** Utilizes the `speech_recognition` library to capture and process voice input.
+- **Command Processing:** Commands are processed using Lua scripts for flexibility.
+- **Command Confirmation:** Includes a confirmation step to validate commands before execution.
+- **Command Logging:** Logs commands and responses for auditing purposes.
+- **Docker Support:** Provides Docker configurations for consistent development and deployment.
 
-## **Getting Started**
+## **Development Setup**
 
 ### **Prerequisites**
 
 - **Python 3.x**
-- Required Python packages (listed below)
-- Lua environment setup
+- **Lua**: Ensure Lua is installed and configured.
+- **Docker**: For containerization.
 
 ### **Installation**
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/mrcfull/vocalis.git
+   git clone https://github.com/yourusername/vocalis.git
    cd vocalis
    ```
 
-2. **Create and Activate a Virtual Environment:**
+2. **Set Up Python Environment:**
    ```bash
    python -m venv .venv
    source .venv/bin/activate
    ```
 
-3. **Install Dependencies:**
+3. **Install Python Dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Ensure Lua Script is in Place:**
-   Place `command_processor.lua` in the `lua_scripts` directory.
+4. **Prepare Lua Scripts:**
+   Ensure `command_processor.lua` is placed in the `lua_scripts` directory.
 
-### **Usage**
+### **Running Locally**
 
-Start capturing and processing voice commands by running:
+To start the application:
 
 ```bash
-python main.py
+python src/main.py
 ```
 
+### **Docker Setup**
+
+**Docker** simplifies the environment setup and deployment.
+
+1. **Build the Docker Image:**
+   ```bash
+   docker build -t vocalis .
+   ```
+
+2. **Run the Docker Container:**
+   ```bash
+   docker run -it --rm --name vocalis vocalis
+   ```
+
+3. **Using Docker Compose (Optional):**
+   Define services and manage dependencies with Docker Compose.
+
+   ```bash
+   docker-compose up
+   ```
+
+### **Development and Contributions**
+
+- **Code Structure:** Source code resides in the `src` directory. Lua scripts are in `lua_scripts`.
+- **Development Workflow:**
+  1. Create a new branch for features or fixes.
+  2. Commit changes and test locally.
+  3. Submit a pull request with a detailed description of changes.
+
+### **Testing**
+
+Ensure functionality by running unit tests. Add test cases under the `tests` directory if needed.
+
+### **Configuration**
+
+Adjust configurations in the `config` file or environment variables as necessary.
+
+## **Additional Resources**
+
+- **[PyInstaller Documentation](https://pyinstaller.org/)**
+- **[Lua Documentation](https://www.lua.org/manual/5.1/)**
+- **[Docker Documentation](https://docs.docker.com/)**
+- **[Docker Compose Documentation](https://docs.docker.com/compose/)**
+  
 ## **TODO List**
 
-### **Planned Features**
-
-- **🔇 Noise Suppression and Filtering:**
-  - Implement advanced techniques to reduce noise and improve recognition in noisy environments.
-
-- **🌐 Automatic Language Detection and Translation:**
-  - Detect the language of commands automatically and translate them before processing.
-
-- **🗂️ Command History Retrieval:**
-  - Add functionality to view and manage a history of past commands and their responses.
-
-- **🔍 Enhanced Command Recognition:**
-  - Improve the accuracy of recognizing complex names and phrases.
-
-- **🖥️ User Interface (UI):**
-  - Develop a graphical or web-based interface for a more interactive and user-friendly experience.
-
-- **📅 Advanced Command Features:**
-  - Implement features such as scheduled commands and more sophisticated command processing in Lua.
-
-## **Contributing**
-
-We welcome contributions! 💡 If you have ideas for improvements or want to fix an issue, please submit a pull request or open an issue on GitHub.
+- **🔍 Advanced Command Recognition:** Enhance recognition accuracy for complex commands.
+- **🔇 Noise Suppression:** Implement algorithms to reduce background noise.
+- **🌐 Language Detection and Translation:** Automatically detect and translate commands.
+- **🗂️ Command History:** Develop functionality for command history management.
+- **🖥️ User Interface:** Design and implement a graphical interface.
 
 ## **License**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
