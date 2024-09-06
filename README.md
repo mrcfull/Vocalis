@@ -80,13 +80,6 @@ python src/main.py
   2. Commit changes and test locally.
   3. Submit a pull request with a detailed description of changes.
 
-### **Testing**
-
-Ensure functionality by running unit tests. Add test cases under the `tests` directory if needed.
-
-### **Configuration**
-
-Adjust configurations in the `config` file or environment variables as necessary.
 
 ## **Additional Resources**
 
