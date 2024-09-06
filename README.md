@@ -1,4 +1,4 @@
-
+# ANY AND ALL FEEDBACK IS APPRECIATED!
 # **Vocalis** v1.0
 
 ## **Project Overview**
@@ -25,7 +25,7 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/vocalis.git
+   git clone https://github.com/mrcful/vocalis.git
    cd vocalis
    ```
 
